@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asgaulti <asgaulti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 18:22:14 by asgaulti          #+#    #+#             */
-/*   Updated: 2020/11/30 15:20:21 by asgaulti         ###   ########.fr       */
+/*   Updated: 2021/04/26 19:44:30 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,8 @@ char			*ft_strtrim(char const *s1, char const *set)
 		start++;
 	while (start < end && ft_find_char(s1[end - 1], set))
 		end--;
-	if (!(res = malloc(sizeof(char) * (end - start + 1))))
+	res = malloc(sizeof(char) * (end - start + 1))
+	if (!res)
 		return (NULL);
 	i = 0;
 	while (start < end)

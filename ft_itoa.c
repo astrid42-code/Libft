@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asgaulti <asgaulti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 17:00:57 by asgaulti          #+#    #+#             */
-/*   Updated: 2020/11/23 16:38:49 by asgaulti         ###   ########.fr       */
+/*   Updated: 2021/04/26 19:39:08 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,8 @@ char		*ft_itoa(int n)
 
 	nb = n;
 	len = ft_len(n);
-	if (!(tab = malloc(sizeof(char) * (len + 1))))
+	tab = malloc(sizeof(char) * (len + 1))
+	if (!tab)
 		return (NULL);
 	tab[len--] = '\0';
 	if (nb == 0)

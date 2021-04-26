@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asgaulti <asgaulti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 18:13:38 by asgaulti          #+#    #+#             */
-/*   Updated: 2020/11/23 18:07:36 by asgaulti         ###   ########.fr       */
+/*   Updated: 2021/04/26 19:42:58 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		i;
 	int		j;
-	int		size_s1;
-	int		size_s2;
 	char	*copy_s;
 
 	i = 0;
-	size_s1 = ft_strlen(s1);
-	size_s2 = ft_strlen(s2);
-	if (!(copy_s = (char *)malloc(sizeof(char *) * (size_s1 + size_s2 + 1))))
+	copy_s = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1))
+	if (!copy_s)
 		return (NULL);
 	while (s1[i])
 	{

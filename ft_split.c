@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asgaulti <asgaulti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 18:10:56 by asgaulti          #+#    #+#             */
-/*   Updated: 2020/11/30 18:01:16 by asgaulti         ###   ########.fr       */
+/*   Updated: 2021/04/26 19:46:24 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,14 +53,16 @@ char			**ft_split(char const *s, char c)
 	i = -1;
 	j = 0;
 	k = 0;
-	if (!(tab = malloc(sizeof(char*) * (ft_countword(s, c) + 1))))
+	tab = malloc(sizeof(char*) * (ft_countword(s, c) + 1))
+	if (!tab)
 		return (NULL);
 	while (s[++i])
 	{
 		if (s[i] != c)
 		{
 			if (k == 0)
-				if (!(tab[j] = malloc(sizeof(char) * (ltab(s, i, c) + 1))))
+				tab[j] = malloc(sizeof(char) * (ltab(s, i, c) + 1))
+				if (!tab)
 					return (NULL);
 			tab[j][k] = s[i];
 			tab[j][++k] = '\0';
