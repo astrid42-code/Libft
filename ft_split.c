@@ -6,7 +6,7 @@
 /*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 18:10:56 by asgaulti          #+#    #+#             */
-/*   Updated: 2021/04/27 19:47:16 by astridgault      ###   ########.fr       */
+/*   Updated: 2021/04/27 19:50:42 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ char			**ft_split(char const *s, char c)
 		if (s[i] != c)
 		{
 			if (k == 0)
-				tab[j] = malloc(sizeof(char) * (ltab(s, i, c) + 1))
+				tab[j] = malloc(sizeof(char) * (ltab(s, i, c) + 1));
 				if (!tab)
 					return (NULL);
 			tab[j][k] = s[i];
