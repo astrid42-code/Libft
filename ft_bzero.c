@@ -3,14 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asgaulti <asgaulti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 17:36:34 by asgaulti          #+#    #+#             */
-/*   Updated: 2020/11/23 11:15:40 by asgaulti         ###   ########.fr       */
+/*   Updated: 2021/04/26 21:35:13 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)

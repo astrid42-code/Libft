@@ -6,7 +6,7 @@
 /*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 17:00:57 by asgaulti          #+#    #+#             */
-/*   Updated: 2021/04/26 19:39:08 by astridgault      ###   ########.fr       */
+/*   Updated: 2021/04/27 19:45:14 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char		*ft_itoa(int n)
 
 	nb = n;
 	len = ft_len(n);
-	tab = malloc(sizeof(char) * (len + 1))
+	tab = malloc(sizeof(char) * (len + 1));
 	if (!tab)
 		return (NULL);
 	tab[len--] = '\0';

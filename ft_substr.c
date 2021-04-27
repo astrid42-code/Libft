@@ -6,7 +6,7 @@
 /*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 18:23:43 by asgaulti          #+#    #+#             */
-/*   Updated: 2021/04/26 19:45:09 by astridgault      ###   ########.fr       */
+/*   Updated: 2021/04/27 19:49:10 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	i = 0;
 	j = 0;
-	copy_s = malloc(sizeof(char) * (len + 1))
+	copy_s = malloc(sizeof(char) * (len + 1));
 	if (!copy_s)
 		return (NULL);
 	while (s[i])

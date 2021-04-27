@@ -3,16 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asgaulti <asgaulti@student.42.fr>          +#+  +:+       +#+        */
+/*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/25 09:48:06 by asgaulti          #+#    #+#             */
-/*   Updated: 2020/11/30 18:53:35 by asgaulti         ###   ########.fr       */
+/*   Updated: 2021/04/26 21:38:02 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdlib.h>
+# include <stddef.h>
+# include <string.h>
+# include <unistd.h>
 
 typedef struct	s_list
 {

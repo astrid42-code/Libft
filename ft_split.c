@@ -6,7 +6,7 @@
 /*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 18:10:56 by asgaulti          #+#    #+#             */
-/*   Updated: 2021/04/26 19:46:24 by astridgault      ###   ########.fr       */
+/*   Updated: 2021/04/27 19:47:16 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ char			**ft_split(char const *s, char c)
 	i = -1;
 	j = 0;
 	k = 0;
-	tab = malloc(sizeof(char*) * (ft_countword(s, c) + 1))
+	tab = malloc(sizeof(char*) * (ft_countword(s, c) + 1));
 	if (!tab)
 		return (NULL);
 	while (s[++i])

@@ -6,7 +6,7 @@
 /*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 18:22:14 by asgaulti          #+#    #+#             */
-/*   Updated: 2021/04/26 19:44:30 by astridgault      ###   ########.fr       */
+/*   Updated: 2021/04/27 19:49:02 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char			*ft_strtrim(char const *s1, char const *set)
 		start++;
 	while (start < end && ft_find_char(s1[end - 1], set))
 		end--;
-	res = malloc(sizeof(char) * (end - start + 1))
+	res = malloc(sizeof(char) * (end - start + 1));
 	if (!res)
 		return (NULL);
 	i = 0;

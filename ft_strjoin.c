@@ -6,7 +6,7 @@
 /*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/21 18:13:38 by asgaulti          #+#    #+#             */
-/*   Updated: 2021/04/26 19:42:58 by astridgault      ###   ########.fr       */
+/*   Updated: 2021/04/27 19:48:17 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*copy_s;
 
 	i = 0;
-	copy_s = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1))
+	copy_s = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!copy_s)
 		return (NULL);
 	while (s1[i])
